@@ -1,0 +1,672 @@
+body {
+  position: relative;
+}
+
+.registration_form_outer {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+  background: rgba(57, 154, 158, 0.54);
+}
+.registration_form_outer .registration_form {
+  width: 80%;
+  margin: 150px auto 0px auto;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.registration_form_outer .registration_form .form_header_outer {
+  background: #4ba8ad;
+}
+.registration_form_outer .registration_form .form_header_outer .form_header_inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.registration_form_outer .registration_form .form_header_outer .form_header_inner .close_window {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.registration_form_outer .registration_form .main_form_outer {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form {
+  max-width: 700px;
+  margin: 0px auto;
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .field_title {
+  width: 110px;
+  text-align: right;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+  position: absolute;
+  left: -125px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.registration_form_outer .registration_form .main_form_outer .main_form select, .registration_form_outer .registration_form .main_form_outer .main_form input {
+  background: #a1a1a1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: #5e5e5e;
+  font-size: 13px;
+  font-weight: 500;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form select:focus, .registration_form_outer .registration_form .main_form_outer .main_form input:focus {
+  background: #e1e1e1;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form select {
+  width: 260px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form input {
+  width: 250px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .title {
+  color: #4ba8ad;
+  margin: 0px auto;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .select {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .select::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  border-color: transparent transparent #524c4c #524c4c;
+  border-radius: 3px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -7px;
+  transform: rotate(-45deg);
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner select {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner select .select_item {
+  padding: 20px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner select .off {
+  display: none;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .req_field {
+  margin-top: -20px;
+  padding-left: 8px;
+  padding-right: 5px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .info {
+  margin-top: -10px;
+  padding: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .info:hover + .tooltip {
+  display: block;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .tooltip {
+  display: none;
+  position: absolute;
+  background: #3e7e82;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 20;
+  top: 30px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 13px 8px;
+  border-color: transparent transparent #3e7e82 transparent;
+  position: absolute;
+  top: -13px;
+  right: 172px;
+  z-index: 20;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .tooltip p {
+  margin: 0px;
+  padding: 10px 5px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .corporate, .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .individual {
+  display: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .corporate label, .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .individual label {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .corporate label img, .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .individual label img {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name {
+  display: flex;
+  justify-content: space-between;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name .first_name, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name .last_name {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name .first_name img, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name .last_name img {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .username {
+  margin: 10px 0px;
+  display: flex;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .username .username_inner {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .username .username_inner img {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block {
+  display: flex;
+  justify-content: space-between;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .confirm_scr_num {
+  position: relative;
+  margin: 0px 0px 10px 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num label, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .confirm_scr_num label {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num label input, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .confirm_scr_num label input {
+  width: 100px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .req_field {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+  z-index: 10;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .info {
+  position: absolute;
+  right: -40px;
+  z-index: 10;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .tooltip {
+  display: none;
+  position: absolute;
+  background: #3e7e82;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 20;
+  top: 30px;
+  width: 420px;
+  right: -160px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 13px 8px;
+  border-color: transparent transparent #3e7e82 transparent;
+  position: absolute;
+  top: -10px;
+  right: 121px;
+  z-index: 20;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .tooltip p {
+  margin: 0px;
+  padding: 10px 5px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num .info:hover + .tooltip {
+  display: block;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .confirm_scr_num img {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .confirm_password {
+  position: relative;
+  margin: 0px 0px 10px 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .req_field {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+  z-index: 10;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .info {
+  position: absolute;
+  right: -40px;
+  z-index: 10;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .tooltip {
+  display: none;
+  position: absolute;
+  background: #3e7e82;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 20;
+  top: 30px;
+  width: 420px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 13px 8px;
+  border-color: transparent transparent #3e7e82 transparent;
+  position: absolute;
+  top: -10px;
+  right: 121px;
+  z-index: 20;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .tooltip p {
+  margin: 0px;
+  padding: 10px 5px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .password .info:hover + .tooltip {
+  display: block;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .password_block .confirm_password img {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .contacts_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .email_url {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .email_address, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .site_url, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .contacts_number, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .country {
+  position: relative;
+  margin-top: 10px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .email_address img, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .site_url img, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .contacts_number img, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .country img {
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  cursor: pointer;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement label input {
+  width: initial;
+  margin: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement label span {
+  position: static;
+  width: initial;
+  padding: 0px 10px;
+  transform: translate(0%, 0%);
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement label span a {
+  color: #4ba8ad;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement label img {
+  align-self: end;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .agreement button {
+  margin-top: 50px;
+  background: #4ba8ad;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffff00;
+  padding: 8px 23px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .footer_content {
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .footer_content .warning p {
+  color: #545353;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .footer_content .warning p a {
+  color: #4ba8ad;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .footer_content .warning p img {
+  vertical-align: super;
+}
+.registration_form_outer .registration_form .main_form_outer .main_form .footer_content button {
+  color: #a1a1a1;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  z-index: 10;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form {
+  display: none;
+  background: #000;
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .pictures {
+  position: relative;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_1 {
+  position: absolute;
+  top: 100px;
+  right: 280px;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_2 {
+  position: absolute;
+  top: 200px;
+  right: 150px;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .text {
+  padding: 0px 20px;
+  position: relative;
+  max-width: 800px;
+  margin: 350px auto 0px auto;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .text h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #4ba8ad;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #bfbfbf;
+  line-height: 35px;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .text p a {
+  color: #4ba8ad;
+}
+.registration_form_outer .registration_form .main_form_outer .success_form .text .close_success_form {
+  position: absolute;
+  bottom: -70px;
+  right: 30px;
+  z-index: 30;
+  color: #a1a1a1;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.error {
+  position: relative;
+}
+.error input {
+  border: 1px solid red !important;
+}
+.error::before {
+  content: "Incorrect data entered";
+  position: absolute;
+  z-index: 10;
+  color: red;
+  width: 100%;
+  top: 2px;
+  left: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.error_select {
+  position: relative;
+}
+.error_select select {
+  border: 1px solid red;
+}
+.error_select::before {
+  content: "Incorrect data entered";
+  position: absolute;
+  z-index: 10;
+  color: red;
+  width: 100%;
+  top: 7px;
+  left: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.current_bsn_type {
+  display: flex !important;
+}
+
+@media (max-width: 1150px) {
+  .registration_form_outer .registration_form .main_form_outer {
+    padding-right: 30px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .field_title {
+    position: static;
+    display: block;
+    text-align: left;
+    padding: 5px 0px;
+    transform: translate(0%, 0%);
+    width: initial;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .req_field {
+    margin-top: 5px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .info {
+    margin-top: 15px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner .tooltip {
+    top: 60px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .tooltip {
+    top: 60px !important;
+    right: -65px !important;
+    width: 300px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .tooltip::after {
+    right: 25px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit {
+    padding-left: 0px;
+    flex-grow: 0;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit input {
+    width: 250px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .corporate img, .registration_form_outer .registration_form .main_form_outer .main_form .individual img, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block img, .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block img {
+    top: 30px !important;
+  }
+
+  .error::before {
+    top: 32px;
+  }
+}
+@media (max-width: 940px) {
+  .registration_form_outer .registration_form .form_header_outer .form_header_inner {
+    padding: 20px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 800px) {
+  .registration_form_outer .registration_form .main_form_outer .main_form .field_title {
+    width: initial;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .title {
+    text-align: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type {
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .tooltip {
+    top: 50px !important;
+    right: -5px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .tooltip::after {
+    right: 5px !important;
+    top: -10px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .bussiness_type .bussiness_type_inner {
+    justify-content: center;
+    padding-left: 39px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .real_name {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .username {
+    justify-content: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .tooltip {
+    top: 60px !important;
+    width: 235px !important;
+    right: -40px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .tooltip::after {
+    right: 0px !important;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit {
+    padding: 0px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .scr_num input, .registration_form_outer .registration_form .main_form_outer .main_form .main_info_block .security_block .security_digit .confirm_scr_num input {
+    width: 250px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block {
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .contacts_block .email_url {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .agreement {
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .agreement label {
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .footer_content {
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .main_form .footer_content button {
+    top: 85px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_1, .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_2 {
+    width: 190px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_1 {
+    right: 180px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_2 {
+    right: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .registration_form_outer {
+    min-width: 360px;
+    background: #000;
+  }
+  .registration_form_outer .registration_form {
+    width: 100%;
+    margin: 0px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_1, .registration_form_outer .registration_form .main_form_outer .success_form .pictures .pic_2 {
+    width: 160px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .text h2 {
+    font-size: 29px;
+  }
+  .registration_form_outer .registration_form .main_form_outer .success_form .text p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=registration.css.map */

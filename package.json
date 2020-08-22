@@ -1,0 +1,13 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "cli": "webpack ./js/main.js --output-path bundle --output-filename bundle.js --mode development --watch --color"
+  },
+  "author": "",
+  "license": "ISC"
+}

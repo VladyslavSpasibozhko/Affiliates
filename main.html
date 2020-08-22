@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliates</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/registration.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="main_container">
+            <!--header-->
+            <div class="inner_container_header">
+                <div class="header">
+                    <img src="./images/logo.png" alt="logo">
+                    <div class="mobile_btn">
+                        <button id="join_mob" class="join">Join</button>
+                        <button id="log_in_mob" class="logIn">Log in</button>
+                    </div>
+                </div>
+            </div>
+            <!--content-->
+            <div class="content">
+                <!--choose language on mobile-->
+                <div class="mobile_language">
+                    <div id="mobile_language"></div>
+                </div>
+                <!--slider and login form-->
+                <div class="top_content">
+                    <div class="slider" id="slider">
+                    </div>
+                    <div class="login_form">
+                        <form>
+                            <h3 id="login_title">Please login in to Your Account</h3>
+                            <input type="text" name="username" placeholder="Username" required >
+                            <input type="password" name="password"  placeholder="Password" required>
+                            <button class="login_desktop" id="log_in_desc">Login</button>
+                            <div class="links">
+                                <button id="join_now" class="join_now" type="button">Join now</button>
+                                <a href="#" id="lost_login">Lost login?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--button join and why oddsbit-->
+                <div class="get_started">
+                    <button id="get_started">Get Started!</button>
+                    <div class="title_first" id="title_first">Who we are</div>
+                    <p id="description_oddsbit">Не упустите шанс присоединиться к новому, амбициозному продукту на рынке криптогемблинга. В нашем продукте представлены широкая спортивная линия, большое количество лайв событий, а также казино и лайв казино с играми от ведущих представителей рынка, которые не оставят равнодушным даже самого требовательного игрока. Присоединяйся сейчас и получи максимум от сотрудничества Не упустите шанс присоединиться к новому, амбициозному продукту на рынке криптогемблинга. В нашем продукте представлены широкая спортивная линия, большое количество лайв событий, а также казино и лайв казино с играми от ведущих представителей рынка, которые не оставят равнодушным даже самого требовательного игрока. Присоединяйся сейчас и получи максимум от сотрудничества </p>
+                    <div class="title_second">
+                        <span id="title_second">Why Oddsbit</span>
+                        <div class="row row_1"></div>
+                        <div class="row row_2"></div>
+                    </div>
+                    <div class="second_screen">
+                        <div class="why_oddsbit">
+                            <div class="bitcoins">
+                                <div class="images_block">
+                                    <img src="./images/second_screen/first_fon.png" alt="bitcoin">
+                                    <img src="./images/second_screen/bitcoins_grey.png" alt="bitcoin" class="default">
+                                    <img src="./images/second_screen/bitcoin_color.png" alt="bitcoin" class="hover_eff">
+                                </div>
+                                <div class="text_block">
+                                    <h2 id="bitcoins_title">Earn bitcoins</h2>
+                                    <p id="bitcoins_desc">All bets are
+                                        exclusively in
+                                        crypto currency </p>
+                                </div>
+                            </div>
+                            <div class="lot_event">
+                                <div class="images_block">
+                                    <img src="./images/second_screen/fon_second.png" alt="event">
+                                    <img src="./images/second_screen/player_grey.png" alt="player" class="default">
+                                    <img src="./images/second_screen/player_color.png" alt="player" class="hover_eff">
+                                </div>
+                                <div class="text_block">
+                                    <h2 id="lot_event_title">A lot of events</h2>
+                                    <p id="lot_event_desc">Over 140 000
+                                        live events
+                                        per year</p>
+                                </div>
+                            </div>
+                            <div class="multi_language">
+                                <div class="images_block">
+                                    <img src="./images/second_screen/fon_third.png" alt="multi_lang">
+                                    <img src="./images/second_screen/multi-lang_grey.png" alt="multi_lang" class="default">
+                                    <img src="./images/second_screen/multi_lang_color.png" alt="multi_lang" class="hover_eff">
+                                </div>
+                                <div class="text_block">
+                                    <h2 id="multi_language_title">Multi-language</h2>
+                                    <p id="multi_language_desc">20 language
+                                        versions are
+                                        available on the site </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revenue_share">
+                            <h1 id="revenue_title">Revenue Share</h1>
+                            <div class="revenue_share_inner">
+                                <div class="player_num">
+                                    <div class="player_num_title">
+                                        <img src="./images/second_screen/number.png" alt="player">
+                                        <span id="rev_title_1">Number of players</span>
+                                    </div>
+                                    <div class="player_num_content">
+                                        <div>0-5</div>
+                                        <div>6-15</div>
+                                        <div>16-35</div>
+                                        <div>35+</div>
+                                    </div>
+                                </div>
+                                <div class="commission">
+                                    <div class="commission_title">
+                                        <img src="./images/second_screen/commission.png" alt="commission">
+                                        <span id="rev_title_2">Commission percentage</span>
+                                    </div>
+                                    <div class="commission_content">
+                                        <div>25%</div>
+                                        <div>30%</div>
+                                        <div>35%</div>
+                                        <div>40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer-->
+                <div class="footer">
+                    <div class="language_select">
+                        <span id="lang_sel">Language</span>
+                        <div id="myDropdown"></div>
+                    </div>
+                    <div class="contacts">
+                        <span id="cont_title">Contact us:</span>
+                        <img src="./images/message.png" alt="message">
+                        <span class="email">affiliate@oddsbit.io</span>
+                    </div>
+                    <div class="info" id="info_footer">
+                        ©2019 oddsbit.io All rights reserved.
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--registration_form-->
+    <div class="registration_form_outer">
+        <div class="registration_form" id="registration_form">
+            <div class="form_header_outer">
+                <div class="form_header_inner">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <button class="close_window" id="close_window"><img src="./images/images_regForm/exit.png" alt="exit"></button>
+                </div>
+            </div>
+            <div class="main_form_outer">
+                <form class="main_form" id="main_form">
+                    <h3 class="title">Affiliate Application Form</h3>
+                    <div class="bussiness_type">
+                        <div class="bussiness_type_inner">
+                            <label>
+                                <span class="field_title">Business Type</span>
+                                <div class="select">
+                                    <select name="business_type" id="business_type" required>
+                                        <option value="" selected class="off">Please Select</option>
+                                        <option value="corporate" class="select_item">Corporate</option>
+                                        <option value="individual" class="select_item">Individual</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <img src="./images/images_regForm/star.png" alt="star" class="req_field">
+                            <img src="./images/images_regForm/info.png" alt="info" class="info">
+                            <div class="tooltip">
+                                <p>If you are individual or as a sole trader, please select ‘Individual’. <br>
+                                    If you are applying on behalf of a company, please select ‘Corporate’.</p>
+                            </div>
+                        </div>
+                        <div class="corporate" id="corporate">
+                            <label>
+                                <span  class="field_title">Company Business Name</span>
+                                <input name="company_name" type="text" required id="company">
+                                <img src="./images/images_regForm/star.png" alt="star">
+                            </label>
+                        </div>
+
+                        <div class="individual" id="individual">
+                            <label>
+                                <span class="field_title">Date Of Birth</span>
+                                <input name="birthday" type="text" required id="birthday">
+                                <img src="./images/images_regForm/star.png" alt="star">
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="main_info_block">
+                        <div class="real_name">
+                            <div class="first_name">
+                                <label>
+                                    <span class="field_title">First name</span>
+                                    <input type="text" name="first_name" id="real_first_name" required>
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </label>
+                            </div>
+                            <div class="last_name">
+                                <label >
+                                    <span class="field_title">Last name</span>
+                                    <input type="text" name="last_name" id="real_last_name" required>
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="username">
+                            <div class="username_inner">
+                                <label>
+                                    <span class="field_title">Username</span>
+                                    <input type="text" name="username" id="username" required>
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="security_block">
+                            <div class="password_block">
+                                <div class="password">
+                                    <label>
+                                        <span class="field_title">Password</span>
+                                        <input type="password" name="password" id="password" required minlength="6" maxlength="14">
+                                    </label>
+                                    <img src="./images/images_regForm/star.png" alt="star" class="req_field">
+                                    <img src="./images/images_regForm/info.png" alt="info" class="info">
+                                    <div class="tooltip">
+                                        <p>Passwords must be between 6 and 14 characters in length <br>
+                                            and contain letters, numbers and underscores only.</p>
+                                    </div>
+                                </div>
+                                <div class="confirm_password">
+                                    <label>
+                                        <span class="field_title">Confirm Password</span>
+                                        <input type="password" name="conf_password" id="conf_password" required>
+                                        <img src="./images/images_regForm/star.png" alt="star">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="security_digit">
+                                <div class="scr_num">
+                                    <label>
+                                        <span class="field_title">Four-Digit Security Number</span>
+                                        <input name="security_number" type="number" maxlength="4" required>
+                                    </label>
+                                    <img src="./images/images_regForm/star.png" class="req_field" alt="star">
+                                    <img src="./images/images_regForm/info.png" class="info" alt="info">
+                                    <div class="tooltip">
+                                        <p>Please enter a four digit number that you can easily remember
+                                            in the box below. You will be asked for this security number when
+                                            you contact us to password recovery.</p>
+                                    </div>
+                                </div>
+                                <div class="confirm_scr_num">
+                                    <label>
+                                        <span class="field_title">Confirm Security Number</span>
+                                        <input name="confirm_security_number" type="number" maxlength="4" required>
+                                    </label>
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_block">
+                        <div class="email_url">
+                            <div class="email_address">
+                                <label>
+                                    <span class="field_title">Email Address</span>
+                                    <input type="email" name="email" id="email" required>
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </label>
+                            </div>
+                            <div class="site_url">
+                                <label>
+                                    <span class="field_title">Site URL</span>
+                                    <input type="text" name="url" id="url" required placeholder="https://">
+                                    <img src="./images/images_regForm/star.png" alt="star">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="contacts_number">
+                            <label >
+                                <span class="field_title">Contact Number</span>
+                                <input type="tel" name="phone" id="contact_number" required>
+                                <img src="./images/images_regForm/star.png" alt="star">
+                            </label>
+                        </div>
+                        <div class="country">
+                            <label >
+                                <span class="field_title">Country</span>
+                                <input type="text" name="country" id="country" required>
+                                <img src="./images/images_regForm/star.png" alt="star">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="agreement">
+                        <label>
+                            <input type="checkbox" name="agreement" id="agree_input" required>
+                            <span class="field_title">I have read and agree to the <a href="#">Terms and Conditions</a></span>
+                            <img src="./images/images_regForm/star.png" alt="star"> </a>
+                        </label>
+                        <button id="submit">Submit</button>
+                    </div>
+                    <div class="footer_content">
+                        <div class="warning">
+                            <p>Fields marked <img src="./images/images_regForm/star.png" alt="star"> must be completed.</p>
+                            <p>If you have difficulty supplying the above details, please <a href="#">Contact Us</a></p>
+                        </div>
+                        <button id="close_form">Close Window</button>
+                    </div>
+                </form>
+                <div class="success_form" id="success_form">
+                    <div class="pictures">
+                        <img src="./images/images_regForm/success_effect1.png" alt="success_photo_1" class="pic_1">
+                        <img src="./images/images_regForm/success_effect2.png" alt="success_photo_2" class="pic_2">
+                    </div>
+                    <div class="text">
+                        <h1>Glad to see you!</h1>
+                        <p>
+                            Thanks for your request!<br>
+                            We need time to review information. You will be notified by email within the 4 days. <br>
+                            If you don't receive our mail, please check Spam Folder. <br>
+                            Feel free to contact our via email <a href="#">affiliate@oddsbit.io</a> if you have any questions!
+                            <br>
+                        </p>
+                        <button class="close_success_form" id="close_success_form">Close Window</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!--datepicker-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--select-->
+    <script src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+    <!--dev-scripts-->
+    <script src="./js/main.js"></script>
+    <script src="./js/registration_form.js"></script>
+    <script src="./js/send_form.js"></script>
+    <script src="./js/animation-effects.js"></script>
+</body>
+</html>
